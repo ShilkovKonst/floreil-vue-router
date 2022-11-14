@@ -1,0 +1,36 @@
+{   
+    "time": 
+    {   "updated": "Dec 4, 2020 11:36:00 UTC", 
+        "updatedISO": "2020-12-04T11:36:00+00:00", 
+        "updateduk": "Dec 4, 2020 at 11:36 GMT" 
+    }, 
+    "disclaimer": "inner info for section cards", 
+    "chartName": "Section cards", 
+    "section_cards": 
+    [ 
+        {
+            "id": 1,
+            "type": "interieur",
+            "title": "Plantes d'intérieur",
+            "description": "Here is a brief description of what you can find here",
+            "link": "interieur",
+            "image": "section-plantes-interieur.jpeg"
+        },
+        {
+            "id": 2,
+            "type": "exterieur",
+            "title": "Plantes d'extérieur",
+            "description": "Here is a brief description of what you can find here",
+            "link": "exterieur",
+            "image": "section-plantes-exterieur.jpeg"
+        },
+        {
+            "id": 3,
+            "type": "conseil",
+            "title": "Conseils",
+            "description": "Here is a brief description of what you can find here",
+            "link": "conseils",
+            "image": "section-conseils-feey.jpg"
+        }
+    ]
+}

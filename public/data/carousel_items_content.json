@@ -1,0 +1,33 @@
+{   
+    "time": 
+    {   "updated": "Dec 4, 2020 11:36:00 UTC", 
+        "updatedISO": "2020-12-04T11:36:00+00:00", 
+        "updateduk": "Dec 4, 2020 at 11:36 GMT" 
+    }, 
+    "disclaimer": "This data was produced", 
+    "chartName": "Items", 
+    "carousel_items": 
+    [ 
+        {
+            "id": 1,
+            "title": "Plantes d'intérieur",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "link": "interieur",
+            "image": "carousel-1-bruno-martins.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Plantes d'extérieur",
+            "description": "Tempore sint deleniti numquam aliquid officiis, officia voluptatem perferendis rerum quod.",
+            "link": "exterieur",
+            "image": "carousel-2-gabriella-clare-marino.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Conseils",
+            "description": "Reprehenderit eveniet iure ipsum autem esse accusamus vel excepturi quo eaque?",
+            "link": "conseils",
+            "image": "carousel-3-lindsey-lamont.jpg"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{   
+    "time": 
+    {   "updated": "Dec 4, 2020 11:36:00 UTC", 
+        "updatedISO": "2020-12-04T11:36:00+00:00", 
+        "updateduk": "Dec 4, 2020 at 11:36 GMT" 
+    }, 
+    "disclaimer": "icons for footer", 
+    "chartName": "Prefooter icons", 
+    "prefooter_icons": 
+    [ 
+        {
+            "id": 1,
+            "link": "https://www.facebook.com/",
+            "icon": "fa fa-brands fa-facebook-f"
+        },
+        {
+            "id": 2,
+            "link": "https://www.instagram.com/",
+            "icon": "fa fa-brands fa-instagram"
+        },
+        {
+            "id": 3,
+            "link": "https://vk.com/",
+            "icon": "fa fa-brands fa-vk"
+        },
+        {
+            "id": 4,
+            "link": "https://twitter.com/",
+            "icon": "fa fa-brands fa-twitter"
+        },
+        {
+            "id": 5,
+            "link": "https://web.telegram.org/",
+            "icon": "fa fa-brands fa-telegram"
+        },
+        {
+            "id": 6,
+            "link": "https://www.youtube.com/",
+            "icon": "fa fa-brands fa-youtube"
+        }
+    ]
+}
