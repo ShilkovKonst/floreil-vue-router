@@ -7,70 +7,78 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      component: HomeView,
     },
     {
       path: '/interieur',
-      name: 'interieur',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/InterieurView.vue'),
-      // children: [
-      //   {
-      //     // UserProfile will be rendered inside User's <router-view>
-      //     // when /user/:id/profile is matched
-      //     path: ':id',
-      //     component: () => import('../views/GoodCardView.vue')
-      //   },]
+      meta:{
+        breadcrumb: [
+          {name: 'Home', link: '/'},
+          {name: "Plantes d'intérieur"}
+        ]
+      }
+    },
+    {
+      path: '/interieur/:id',
+      component: () => import('../views/GoodCardView.vue'),
+      meta:{
+        breadcrumb: [
+          {name: 'Home', link: '/'},
+          {name: "Plantes d'intérieur", link: '/interieur'},
+        ]
+      }
     },
     {
       path: '/exterieur',
-      name: 'exterieur',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/ExterieurView.vue'),
-      // children: [
-      //   {
-      //     // UserProfile will be rendered inside User's <router-view>
-      //     // when /user/:id/profile is matched
-      //     path: ':id',
-      //     component: () => import('../views/GoodCardView.vue')
-      //   },]
+      meta:{
+        breadcrumb: [
+          {name: 'Home', link: '/'},
+          {name: "Plantes d'extérieur"}
+        ]
+      }
+    },
+    {
+      path: '/exterieur/:id',
+      name: 'card',
+      component: () => import('../views/GoodCardView.vue'),
+      meta:{
+        breadcrumb: [
+          {name: 'Home', link: '/'},
+          {name: "Plantes d'extérieur", link: '/exterieur'},
+        ]
+      }
     },
     {
       path: '/conseils',
-      name: 'conseils',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/ConseilsView.vue')
-    },
-    {
-      path: '/:id',
-      name: 'card',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/GoodCardView.vue'),
+      component: () => import('../views/ConseilsView.vue'),
+      meta:{
+        breadcrumb: [
+          {name: 'Home', link: '/'},
+          {name: 'Conseils'}
+        ]
+      }
     },
     {
       path: '/company',
-      name: 'company',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
+      component: () => import('../views/AboutView.vue'),
+      meta:{
+        breadcrumb: [
+          {name: 'Home', link: '/'},
+          {name: 'Company'}
+        ]
+      }
     },
     {
       path: '/community',
-      name: 'community',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/CommunityView.vue')
+      component: () => import('../views/CommunityView.vue'),
+      meta:{
+        breadcrumb: [
+          {name: 'Home', link: '/'},
+          {name: 'Community'}
+        ]
+      }
     },
   ]
 })

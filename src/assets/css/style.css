@@ -59,8 +59,18 @@ header {
     background-size: cover;
     background-attachment: fixed;
 }
-#footer {
+#footer, #breadcrumbs {
     background: linear-gradient(to right, var(--main_bg_color_222) 0%, var(--main_bg_color_111) 50%, var(--main_bg_color_222) 100%);
+}
+#breadcrumbs{
+    padding: 0;
+}
+.breadcrumb{
+    margin: 0;
+}
+.breadcrumb button{
+    margin: 0;
+    padding: 0;
 }
 
 #video_section,

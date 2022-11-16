@@ -35,7 +35,7 @@ export default {
         <div class="container">
             <div class="row">
                 <template v-for="(goods_card, index) in goods_cards">
-                    <Goods_card_brief v-if="goods_card.type === 'interieur'" :image="goods_card.image"
+                    <Goods_card_brief v-if="goods_card.type === 'interieur'" :type="goods_card.type" :image="goods_card.image"
                         :title="goods_card.title" :id="goods_card.id" :Nom_commun="goods_card.Nom_commun"
                         :Genre_de_la_plante="goods_card.Genre_de_la_plante" :Espèce="goods_card.Espèce"
                         :Variété="goods_card.Variété" :Famille="goods_card.Famille" :price="goods_card.price"

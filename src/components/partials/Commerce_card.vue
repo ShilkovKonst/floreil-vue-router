@@ -30,7 +30,7 @@ export default {
         return {
             isHidden: true,
             d_block: 'd-block',
-            d_none: 'd-none'
+            d_none: 'd-none',
         }
     },
     methods: {

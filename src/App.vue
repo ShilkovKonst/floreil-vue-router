@@ -8,11 +8,14 @@ import Footer from './components/Footer.vue'
 import Modal_login from './components/Modal_login.vue'
 import Modal_signin from './components/Modal_signin.vue'
 import Modal_reset from './components/Modal_reset.vue'
+import BreadcrumbsVue from './components/Breadcrumbs.vue'
+
 </script>
 
 <template>
   <Header />
   <Search />
+  <BreadcrumbsVue />
   <main>
     <RouterView />
   </main>

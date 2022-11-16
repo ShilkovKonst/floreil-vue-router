@@ -1,6 +1,6 @@
 <template>
     <div class="col-12 col-md-6 col-lg-4 my-3">
-        <RouterLink :to='`${id}`' class="text-decoration-none"><ul class="list-group list-group-horizontal card_shadow rounded-0 rounded-top">
+        <RouterLink :to="`${type}/${id}`"  class="text-decoration-none"><ul class="list-group list-group-horizontal card_shadow rounded-0 rounded-top">
             <li class="list-group-item w-100">
                 <h5 class="card-title card-title-height ">{{ title }}</h5>
             </li>
@@ -18,9 +18,6 @@
                     </li>
                     <li class="list-group-item">
                         <span class="fw-bold">Espèce: </span>{{ Espèce }}
-                    </li>
-                    <li class="list-group-item">
-                        <span class="fw-bold">Variété: </span>{{ Variété }}
                     </li>
                     <li class="list-group-item">
                         <span class="fw-bold">Famille: </span>{{ Famille }}

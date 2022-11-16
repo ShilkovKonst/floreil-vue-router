@@ -38,14 +38,20 @@ export default {
                             <div class="col-md-4">
                                 <img :src="`http://127.0.0.1:5173/data_goods_images/${card.image}`"
                                     class="img-fluid rounded" :alt=card.image>
-                                <ul class="list-group ">
-                                    <li class="list-group-item">
-                                        <p class="fw-bold">Prix: {{ card.price }} &#x20ac</p>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <p class="fw-bold">Quantité: {{ card.quantity }}</p>
-                                    </li>
-                                </ul>
+                                <div class="d-flex">
+                                    <ul class="list-group w-100">
+                                        <li class="list-group-item">
+                                            <p class="fw-bold">Prix: {{ card.price }} &#x20ac</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p class="fw-bold">Quantité: {{ card.quantity }}</p>
+                                        </li>
+                                    </ul>
+                                    <button
+                                        class="d-flex justify-content-center align-self-center btn btn-header flex-shrink-0 huge m-3">
+                                        <i class="fa fa-cart-arrow-down fa-2xl align-self-center text-shadow"></i>
+                                    </button>
+                                </div>
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
