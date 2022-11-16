@@ -10,7 +10,7 @@
         {
             "id": 1,
             "type": "exterieur",
-            "title": "Cupressocyparis Leylandii'Castlewellan Gold'",
+            "title": "Cupressocyparis Leylandii",
             "Nom_commun": "Cyprès de Leyland doré",
             "Genre_de_la_plante": "X Cupressocyparis",
             "Espèce": "Leylandii",
@@ -34,7 +34,7 @@
         {
             "id": 2,
             "type": "exterieur",
-            "title": "Hibiscus syriacus 'Woodbridge' : conteneur 7,5 litres",
+            "title": "Hibiscus syriacus : conteneur 7,5 litres",
             "Nom_commun": "Althea ' Woodbridge '",
             "Genre_de_la_plante": "Hibiscus",
             "Espèce": "Syriacus",
@@ -82,7 +82,7 @@
         {
             "id": 4,
             "type": "exterieur",
-            "title": "Acer palmatum dissectum 'Tamukeyama' C30L.H100/125cm",
+            "title": "Acer palmatum dissectum C30L.H100/125cm",
             "Nom_commun": "Érable du Japon",
             "Genre_de_la_plante": "Acer",
             "Espèce": "Dissectum",
@@ -178,7 +178,7 @@
         {
             "id": 8,
             "type": "exterieur",
-            "title": "Prunus laurocerasus ' Rotundifolia ' : H 80/100 cm ctr 5 litres",
+            "title": "Prunus laurocerasus : H 80/100 cm ctr 5 litres",
             "Nom_commun": "Laurier cerise à feuilles rondes.",
             "Genre_de_la_plante": "Prunus",
             "Espèce": "Laurocerasus",

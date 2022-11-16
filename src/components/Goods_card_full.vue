@@ -62,6 +62,9 @@ export default {
                                             {{ card.Résistance_au_froid_bas }} à
                                             {{ card.Résistance_au_froid_haut }}
                                         </li>
+                                        <li v-else class="list-group-item">
+                                            <span class="fw-bold">Résistance au froid:</span> non
+                                        </li>
                                         <li class="list-group-item">
                                             <span class="fw-bold">Hauteur à maturité (cm): </span>
                                             {{ card.Hauteur_à_maturité_cm }}

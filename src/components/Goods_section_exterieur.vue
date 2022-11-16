@@ -35,11 +35,14 @@ export default {
         <div class="container">
             <div class="row">
                 <template v-for="(goods_card, index) in goods_cards">
-                    <Goods_card_brief v-if="goods_card.type === 'exterieur'" :type="goods_card.type" :image="goods_card.image"
-                        :title="goods_card.title" :id="goods_card.id" :Nom_commun="goods_card.Nom_commun"
-                        :Genre_de_la_plante="goods_card.Genre_de_la_plante" :Espèce="goods_card.Espèce"
-                        :Variété="goods_card.Variété" :Famille="goods_card.Famille" :price="goods_card.price"
-                        :quantity="goods_card.quantity"/>
+                    <Goods_card_brief v-if="goods_card.type === 'exterieur'" :id="goods_card.id" :type="goods_card.type"
+                        :image="goods_card.image" :title="goods_card.title" :Nom_commun="goods_card.Nom_commun"
+                        :Résistance_au_froid="goods_card.Résistance_au_froid"
+                        :Résistance_au_froid_bas="goods_card.Résistance_au_froid_bas"
+                        :Résistance_au_froid_haut="goods_card.Résistance_au_froid_haut"
+                        :Hauteur_à_maturité_cm="goods_card.Hauteur_à_maturité_cm"
+                        :Floraison_parfumée="goods_card.Floraison_parfumée" :price="goods_card.price"
+                        :quantity="goods_card.quantity" />
                 </template>
             </div>
         </div>

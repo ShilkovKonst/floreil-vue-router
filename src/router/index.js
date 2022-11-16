@@ -26,6 +26,7 @@ const router = createRouter({
         breadcrumb: [
           {name: 'Home', link: '/'},
           {name: "Plantes d'intérieur", link: '/interieur'},
+          {name: " "},
         ]
       }
     },
@@ -47,6 +48,7 @@ const router = createRouter({
         breadcrumb: [
           {name: 'Home', link: '/'},
           {name: "Plantes d'extérieur", link: '/exterieur'},
+          {name: " "},
         ]
       }
     },
