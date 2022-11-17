@@ -36,7 +36,7 @@ export default {
                         </div>
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img :src="`http://127.0.0.1:5173/data_goods_images/${card.image}`"
+                                <img :src="`/src/assets/images/data_goods_images/${card.image}`"
                                     class="img-fluid rounded" :alt=card.image>
                                 <div class="d-flex">
                                     <ul class="list-group w-100">

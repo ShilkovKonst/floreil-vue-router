@@ -8,7 +8,7 @@
             </ul>
         </RouterLink>
         <div class="card rot_y_180_toggler">
-            <img :src="`./data_goods_images/${image}`" class="card-img rotatable_y_0_to_180 card_shadow rounded-0"
+            <img :src="`./src/assets/images/data_goods_images/${image}`" class="card-img rotatable_y_0_to_180 card_shadow rounded-0"
                 :alt=image>
             <div
                 class="card-img-overlay card_shadow rotatable_y_180_to_0 justify-content-center bg_color_2 overflow-auto rounded-0 p-1">
