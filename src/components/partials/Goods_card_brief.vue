@@ -1,3 +1,29 @@
+<script>
+import { RouterLink } from 'vue-router'
+
+export default {
+    name: "Goods_card_brief",
+    props: {
+        id: Number,
+        type: String,
+        image: String,
+        title: String,        
+        Nom_commun: String,
+        Résistance_au_froid: Boolean,
+        Résistance_au_froid_bas: Number,
+        Résistance_au_froid_haut: Number,
+        Hauteur_à_maturité_cm: Number,
+        Floraison_parfumée: String,
+        price: Number,
+        quantity: Number
+    },
+    data() {
+        return {
+        }
+    }
+}
+</script>
+
 <template>
     <div class="col-12 col-md-6 col-lg-4 my-3">
         <RouterLink :to="`${type}/${id}`" class="text-decoration-none">
@@ -51,28 +77,3 @@
     </div>
 </template>
 
-<script>
-import { RouterLink } from 'vue-router'
-
-export default {
-    name: "Goods_card_brief",
-    props: {
-        id: Number,
-        type: String,
-        image: String,
-        title: String,        
-        Nom_commun: String,
-        Résistance_au_froid: Boolean,
-        Résistance_au_froid_bas: Number,
-        Résistance_au_froid_haut: Number,
-        Hauteur_à_maturité_cm: Number,
-        Floraison_parfumée: String,
-        price: Number,
-        quantity: Number
-    },
-    data() {
-        return {
-        }
-    }
-}
-</script>

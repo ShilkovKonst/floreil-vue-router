@@ -1,6 +1,5 @@
 <script>
 import Goods_card_brief from '@/components/partials/Goods_card_brief.vue'
-
 import axios from 'axios'
 
 export default {

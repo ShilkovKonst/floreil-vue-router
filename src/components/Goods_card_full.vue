@@ -21,7 +21,6 @@ export default {
                 this.card = this.goods_cards.find(e => e.id === id)
             })
     }
-
 }
 </script>
 

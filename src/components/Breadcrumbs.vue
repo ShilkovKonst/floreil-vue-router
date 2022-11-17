@@ -1,24 +1,3 @@
-<template>
-    <section id="breadcrumbs">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex gap-3">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li v-for="(crumb, index) in crumbs" :key="index" class="breadcrumb-item">
-                                <button class="btn btn-link" @click="routeTo(index)" :class="{'disabled': !crumb.link}">
-                                    {{ crumb.name }}
-                                </button>
-                            </li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</template>
-
 <script>
 export default {
     name: 'Breadcrumbs',
@@ -46,3 +25,24 @@ export default {
     }
 }
 </script>
+
+<template>
+    <section id="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex gap-3">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li v-for="(crumb, index) in crumbs" :key="index" class="breadcrumb-item">
+                                <button class="btn btn-link" @click="routeTo(index)" :class="{'disabled': !crumb.link}">
+                                    {{ crumb.name }}
+                                </button>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</template>

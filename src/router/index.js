@@ -1,6 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-
+import Interieur from '../views/InterieurView.vue'
+import Exterieur from '../views/ExterieurView.vue'
+import Good_Card from '../views/GoodCardView.vue'
+import Conseils from '../views/ConseilsView.vue'
+import About from '../views/AboutView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -11,7 +15,7 @@ const router = createRouter({
     },
     {
       path: '/interieur',
-      component: () => import('../views/InterieurView.vue'),
+      component: Interieur,
       meta:{
         breadcrumb: [
           {name: 'Home', link: '/'},
@@ -21,7 +25,7 @@ const router = createRouter({
     },
     {
       path: '/interieur/:id',
-      component: () => import('../views/GoodCardView.vue'),
+      component: Good_Card,
       meta:{
         breadcrumb: [
           {name: 'Home', link: '/'},
@@ -32,7 +36,7 @@ const router = createRouter({
     },
     {
       path: '/exterieur',
-      component: () => import('../views/ExterieurView.vue'),
+      component: Exterieur,
       meta:{
         breadcrumb: [
           {name: 'Home', link: '/'},
@@ -42,8 +46,7 @@ const router = createRouter({
     },
     {
       path: '/exterieur/:id',
-      name: 'card',
-      component: () => import('../views/GoodCardView.vue'),
+      component: Good_Card,
       meta:{
         breadcrumb: [
           {name: 'Home', link: '/'},
@@ -54,7 +57,7 @@ const router = createRouter({
     },
     {
       path: '/conseils',
-      component: () => import('../views/ConseilsView.vue'),
+      component: Conseils,
       meta:{
         breadcrumb: [
           {name: 'Home', link: '/'},
@@ -64,7 +67,7 @@ const router = createRouter({
     },
     {
       path: '/company',
-      component: () => import('../views/AboutView.vue'),
+      component: About,
       meta:{
         breadcrumb: [
           {name: 'Home', link: '/'},
@@ -74,7 +77,7 @@ const router = createRouter({
     },
     {
       path: '/community',
-      component: () => import('../views/CommunityView.vue'),
+      component: About,
       meta:{
         breadcrumb: [
           {name: 'Home', link: '/'},

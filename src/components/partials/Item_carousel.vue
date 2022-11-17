@@ -1,3 +1,18 @@
+<script>
+import { RouterLink } from 'vue-router'
+
+export default {
+    name: 'Item_carousel',
+    props: {
+        id: Number,
+        link: String,
+        image: String,
+        title: String,
+        description: String,
+    }
+}
+</script>
+
 <template>
     <div v-if="id === 1" class="carousel-item active" style="max-height: 500px" data-bs-interval="100">
         <RouterLink :to=link>
@@ -18,18 +33,3 @@
         </a>
     </div>
 </template>
-
-<script>
-import { RouterLink } from 'vue-router'
-
-export default {
-    name: 'Item_carousel',
-    props: {
-        id: Number,
-        link: String,
-        image: String,
-        title: String,
-        description: String,
-    }
-}
-</script>

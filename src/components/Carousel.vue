@@ -1,3 +1,33 @@
+<script>
+import Item from '@/components/partials/Item_carousel.vue'
+import axios from 'axios'
+
+export default {
+  name: 'Carousel',
+  components: {
+    Item
+  },
+  props: {
+  },
+  data() {
+    return {
+      items: [],
+      errors: []
+    }
+  },
+  created() {
+    axios.get(`http://localhost:5173/data/carousel_items_content.json`)
+      .then(response => {
+        // JSON responses are automatically parsed.
+        this.items = response.data.carousel_items
+      })
+      .catch(e => {
+        this.errors.push(e)
+      })
+  }
+}
+</script>
+
 <template>
   <section id="ads_carousel">
     <div class="container">
@@ -35,34 +65,3 @@
     </div>
   </section>
 </template>
-
-<script>
-import Item from '@/components/partials/Item_carousel.vue'
-
-import axios from 'axios'
-
-export default {
-  name: 'Carousel',
-  components: {
-    Item
-  },
-  props: {
-  },
-  data() {
-    return {
-      items: [],
-      errors: []
-    }
-  },
-  created() {
-    axios.get(`http://localhost:5173/data/carousel_items_content.json`)
-      .then(response => {
-        // JSON responses are automatically parsed.
-        this.items = response.data.carousel_items
-      })
-      .catch(e => {
-        this.errors.push(e)
-      })
-  }
-}
-</script>
