@@ -24,12 +24,12 @@ export default {
         </RouterLink>
     </div>
     <div v-else class="carousel-item" style="max-height: 500px" data-bs-interval="100">
-        <a :href=link>
+        <RouterLink :to=link>
             <img :src="`./src/assets/images/carousel/${image}`" class="d-block w-100 img-fluid" :alt=title>
             <div class="carousel-caption p-3 p-lg-5">
                 <h5>{{ title }}</h5>
                 <p class="d-none d-md-block">{{ description }}</p>
             </div>
-        </a>
+        </RouterLink>
     </div>
 </template>
